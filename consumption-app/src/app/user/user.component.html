@@ -1,0 +1,13 @@
+<section>
+@if (isLoggedIn) {
+<p>Bienvenido {{username}}</p>
+<img 
+(click)="greet()"
+alt="photo"
+src="https://github.com/midudev.png"/>
+} @else {
+    <p>Aplicación de consumo</p>
+    <button (click) = "isLoggedIn = true">Log in</button>
+}
+
+</section>
